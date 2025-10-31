@@ -20,13 +20,13 @@ Welcome to the **Aletheia** documentation! This wiki contains detailed guides, e
 ### Framework Integration
 
 - **[Spring Boot Integration](Spring-Boot-Integration.md)** - Using Aletheia with Spring Boot
-- **[Quarkus Integration]( applicationsQuarkus-Integration.md)** - Using Aletheia withatiiviQuarkus
+- **[Quarkus Integration](Quarkus-Integration.md)** - Using Aletheia with Quarkus
 - **[Plain Java](Plain-Java.md)** - Using Aletheia without frameworks
 
 ### Advanced Topics
 
 - **[Custom Providers](Custom-Providers.md)** - Creating custom secret providers
-- **[Caching фунты](Caching.md)** - Understanding TTL-based caching
+- **[Caching](Caching.md)** - Understanding TTL-based caching
 - **[Testing](Testing.md)** - Testing with Aletheia
 - **[Best Practices](Best-Practices.md)** - Recommended patterns and practices
 
