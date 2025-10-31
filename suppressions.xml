@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suppressions xmlns="https://jeremylong.github.io/DependencyCheck/dependency-suppression.1.3.xsd">
+
+    <!-- gRPC CVEs -->
+    <suppress>
+        <notes>
+            grpc-core / grpc-protobuf - false positive or not exploitable in our context.
+            CVE-2024-11407, CVE-2024-7246
+        </notes>
+        <packageUrl regex="true">pkg:maven/io\.grpc/(grpc-core|grpc-protobuf)@.*</packageUrl>
+        <cve>CVE-2024-11407</cve>
+        <cve>CVE-2024-7246</cve>
+    </suppress>
+
+    <!-- Spring Context CVE -->
+    <suppress>
+        <notes>
+            Spring Context 6.1.5 - non-exploitable in library-only context (no web server usage)
+            CVE-2024-38820
+        </notes>
+        <packageUrl regex="true">pkg:maven/org\.springframework/spring-context@.*</packageUrl>
+        <cve>CVE-2024-38820</cve>
+    </suppress>
+
+</suppressions>
