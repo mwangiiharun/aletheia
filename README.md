@@ -8,7 +8,7 @@
 
 # Aletheia
 
-[![Maven Central](https://img.shields.io/maven-central/v/io.github.mwangiiharun.aletheia/aletheia.svg)](https://search.maven.org/artifact/io.github.mwangiiharun.aletheia/aletheia)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.mwangiiharun/aletheia.svg)](https://search.maven.org/artifact/io.github.mwangiiharun/aletheia)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
 > **ἀλήθεια** (Greek: "truth") - Bringing truth and transparency to secret management
@@ -39,6 +39,8 @@
 🔒 **Type-Safe** - Leverage Java's type system for better security  
 
 ## Installation
+
+Aletheia is available on [Maven Central](https://search.maven.org/artifact/io.github.mwangiiharun/aletheia).
 
 ### Maven
 
