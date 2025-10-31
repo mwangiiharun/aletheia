@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.github.mwangiiharun</groupId>
   <artifactId>aletheia</artifactId>
-  <version>0.1.0</version>
+    <version>0.2.0</version>
   <packaging>jar</packaging>
   <name>Aletheia</name>
   <description>Annotation-driven secret &amp; configuration library for Java 17+</description>

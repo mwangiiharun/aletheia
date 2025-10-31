@@ -15,6 +15,8 @@
 
 **Aletheia** is a lightweight, framework-agnostic secret management library for Java 17+ that simplifies secure configuration management across different environments. It provides annotation-based secret injection with support for multiple providers, automatic fallback chains, and seamless integration with Spring Boot and Quarkus.
 
+📖 **[Read the full documentation on the Wiki →](https://github.com/mwangiiharun/aletheia/wiki)**
+
 ## Features
 
 ✨ **Multi-Provider Support** - Fetch secrets from Environment Variables, Files, AWS Secrets Manager, Google Cloud Secret Manager, or HashiCorp Vault  
@@ -33,16 +35,16 @@ Add the following dependency to your `pom.xml`:
 
 ```xml
 <dependency>
-    <groupId>io.github.mwangiiharun.aletheia</groupId>
+    <groupId>io.github.mwangiiharun</groupId>
     <artifactId>aletheia</artifactId>
-    <version>0.1.0-SNAPSHOT</version>
+    <version>0.2.0</version>
 </dependency>
 ```
 
 ### Gradle
 
 ```gradle
-implementation 'io.github.mwangiiharun.aletheia:aletheia:0.1.0-SNAPSHOT'
+implementation 'io.github.mwangiiharun:aletheia:0.2.0'
 ```
 
 ## Quick Start
@@ -773,8 +775,8 @@ Licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for deta
 
 ## Support
 
-- **Issues**: [GitHub Issues](https://github.com/aletheia/aletheia/issues)
-- **Documentation**: [GitHub Wiki](https://github.com/aletheia/aletheia/wiki)
+- **Issues**: [GitHub Issues](https://github.com/mwangiiharun/aletheia/issues)
+- **Documentation**: [GitHub Wiki](https://github.com/mwangiiharun/aletheia/wiki)
 
 ## Authors
 
