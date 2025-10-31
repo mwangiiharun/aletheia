@@ -15,7 +15,18 @@
 
 **Aletheia** is a lightweight, framework-agnostic secret management library for Java 17+ that simplifies secure configuration management across different environments. It provides annotation-based secret injection with support for multiple providers, automatic fallback chains, and seamless integration with Spring Boot and Quarkus.
 
-📖 **[Read the full documentation on the Wiki →](https://github.com/mwangiiharun/aletheia/wiki)**
+📖 **[View Documentation →](wiki/)**
+
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+- [Configuration](#configuration)
+- [Documentation](#documentation)
+- [License](#license)
+- [Support](#support)
+- [Authors](#authors)
 
 ## Features
 
@@ -773,10 +784,48 @@ Contributions are welcome! Please see our contributing guidelines.
 
 Licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
 
+## Documentation
+
+### Getting Started
+- [Installation Guide](wiki/Installation.md) - How to install and add Aletheia to your project
+- [Quick Start Guide](wiki/Quick-Start.md) - Get up and running in minutes
+- [Configuration Guide](wiki/Configuration.md) - Configure providers and settings
+
+### Core Concepts
+- [Providers Overview](wiki/Providers.md) - Understanding secret providers (ENV, FILE, AWS, GCP, VAULT)
+- [Provider Chain](wiki/Provider-Chain.md) - How the provider fallback chain works
+- [Secret Injection](wiki/Secret-Injection.md) - Using `@Secret` annotations for automatic injection
+- [Error Handling](wiki/Error-Handling.md) - Understanding exceptions and error handling
+
+### Framework Integration
+- [Spring Boot Integration](wiki/Spring-Boot-Integration.md) - Using Aletheia with Spring Boot
+- [Quarkus Integration](wiki/Quarkus-Integration.md) - Using Aletheia with Quarkus
+- [Plain Java](wiki/Plain-Java.md) - Using Aletheia without frameworks
+
+### Advanced Topics
+- [Custom Providers](wiki/Custom-Providers.md) - Creating custom secret providers
+- [Caching](wiki/Caching.md) - Understanding TTL-based caching
+- [Testing](wiki/Testing.md) - Testing with Aletheia
+- [Best Practices](wiki/Best-Practices.md) - Recommended patterns and practices
+
+### Provider Guides
+- [AWS Secrets Manager](wiki/AWS-Secrets-Manager.md) - Detailed AWS provider guide
+- [GCP Secret Manager](wiki/GCP-Secret-Manager.md) - Detailed GCP provider guide
+- [HashiCorp Vault](wiki/HashiCorp-Vault.md) - Detailed Vault provider guide
+- [File Provider](wiki/File-Provider.md) - Using JSON file-based secrets
+- [Environment Variables](wiki/Environment-Variables.md) - Using environment variables
+
+### Troubleshooting
+- [Common Issues](wiki/Common-Issues.md) - Solutions to common problems
+- [Debugging Guide](wiki/Debugging.md) - Tips for debugging secret resolution
+- [Migration Guide](wiki/Migration-Guide.md) - Migrating from older versions
+
+📖 **[View all documentation →](wiki/)**
+
 ## Support
 
 - **Issues**: [GitHub Issues](https://github.com/mwangiiharun/aletheia/issues)
-- **Documentation**: [GitHub Wiki](https://github.com/mwangiiharun/aletheia/wiki)
+- **Documentation**: [Wiki](wiki/)
 
 ## Authors
 
