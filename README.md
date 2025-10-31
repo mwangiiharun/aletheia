@@ -8,7 +8,7 @@
 
 # Aletheia
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.aletheia/aletheia.svg)](https://search.maven.org/artifact/com.aletheia/aletheia)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.mwangiiharun.aletheia/aletheia.svg)](https://search.maven.org/artifact/io.github.mwangiiharun.aletheia/aletheia)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
 > **ἀλήθεια** (Greek: "truth") - Bringing truth and transparency to secret management
@@ -33,7 +33,7 @@ Add the following dependency to your `pom.xml`:
 
 ```xml
 <dependency>
-    <groupId>com.aletheia</groupId>
+    <groupId>io.github.mwangiiharun.aletheia</groupId>
     <artifactId>aletheia</artifactId>
     <version>0.1.0-SNAPSHOT</version>
 </dependency>
@@ -42,7 +42,7 @@ Add the following dependency to your `pom.xml`:
 ### Gradle
 
 ```gradle
-implementation 'com.aletheia:aletheia:0.1.0-SNAPSHOT'
+implementation 'io.github.mwangiiharun.aletheia:aletheia:0.1.0-SNAPSHOT'
 ```
 
 ## Quick Start
@@ -50,8 +50,8 @@ implementation 'com.aletheia:aletheia:0.1.0-SNAPSHOT'
 ### Basic Usage
 
 ```java
-import com.aletheia.Aletheia;
-import com.aletheia.annotations.Secret;
+import io.github.mwangiiharun.aletheia.Aletheia;
+import io.github.mwangiiharun.aletheia.annotations.Secret;
 
 public class AppConfig {
     @Secret("DATABASE_PASSWORD")
@@ -75,8 +75,8 @@ public class AppConfig {
 ### Direct Secret Retrieval
 
 ```java
-import com.aletheia.Aletheia;
-import com.aletheia.exceptions.AletheiaException;
+import io.github.mwangiiharun.aletheia.Aletheia;
+import io.github.mwangiiharun.aletheia.exceptions.AletheiaException;
 
 public class Example {
     public static void main(String[] args) {
@@ -295,7 +295,7 @@ String secret = Aletheia.getSecret("secret/myapp/database/password");
 The `@Secret` annotation provides declarative secret injection:
 
 ```java
-import com.aletheia.annotations.Secret;
+import io.github.mwangiiharun.aletheia.annotations.Secret;
 
 public class DatabaseConfig {
     @Secret("DB_HOST")
@@ -370,7 +370,7 @@ Aletheia registers a `BeanPostProcessor` that automatically injects secrets into
 For more control or when using plain Spring (without Spring Boot), use the `@EnableAletheia` annotation:
 
 ```java
-import com.aletheia.spring.EnableAletheia;
+import io.github.mwangiiharun.aletheia.spring.EnableAletheia;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
@@ -397,8 +397,8 @@ public class AppConfig {
 **Example with Spring Framework (non-Boot):**
 
 ```java
-import com.aletheia.spring.EnableAletheia;
-import com.aletheia.annotations.Secret;
+import io.github.mwangiiharun.aletheia.spring.EnableAletheia;
+import io.github.mwangiiharun.aletheia.annotations.Secret;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ComponentScan;
 
@@ -421,7 +421,7 @@ public class DatabaseService {
 **Example with Conditional Activation:**
 
 ```java
-import com.aletheia.spring.EnableAletheia;
+import io.github.mwangiiharun.aletheia.spring.EnableAletheia;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
@@ -436,7 +436,7 @@ public class ProductionConfig {
 ### Usage in Spring Beans
 
 ```java
-import com.aletheia.annotations.Secret;
+import io.github.mwangiiharun.aletheia.annotations.Secret;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -463,7 +463,7 @@ public class DatabaseService {
 If you need manual control:
 
 ```java
-import com.aletheia.Aletheia;
+import io.github.mwangiiharun.aletheia.Aletheia;
 import org.springframework.beans.factory.InitializingBean;
 
 @Component
@@ -522,8 +522,8 @@ String secret = Aletheia.getSecret("DATABASE_PASSWORD");
 Aletheia provides specific exception types for better error handling:
 
 ```java
-import com.aletheia.exceptions.*;
-import com.aletheia.Aletheia;
+import io.github.mwangiiharun.aletheia.exceptions.*;
+import io.github.mwangiiharun.aletheia.Aletheia;
 
 try {
     String secret = Aletheia.getSecret("MY_SECRET");
@@ -564,10 +564,10 @@ aletheia.providers=VAULT,AWS,ENV
 For testing or advanced scenarios:
 
 ```java
-import com.aletheia.Aletheia;
-import com.aletheia.SecretProvider;
-import com.aletheia.providers.EnvProvider;
-import com.aletheia.providers.FileProvider;
+import io.github.mwangiiharun.aletheia.Aletheia;
+import io.github.mwangiiharun.aletheia.SecretProvider;
+import io.github.mwangiiharun.aletheia.providers.EnvProvider;
+import io.github.mwangiiharun.aletheia.providers.FileProvider;
 
 // Reinitialize with custom providers
 Aletheia.reinitializeProviders();
@@ -658,9 +658,9 @@ void setup() {
 Here's a complete example showing all features:
 
 ```java
-import com.aletheia.Aletheia;
-import com.aletheia.annotations.Secret;
-import com.aletheia.exceptions.AletheiaException;
+import io.github.mwangiiharun.aletheia.Aletheia;
+import io.github.mwangiiharun.aletheia.annotations.Secret;
+import io.github.mwangiiharun.aletheia.exceptions.AletheiaException;
 
 public class CompleteExample {
     

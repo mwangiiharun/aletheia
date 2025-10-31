@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.aletheia.spring.AletheiaAutoConfiguration
+io.github.mwangiiharun.aletheia.spring.AletheiaAutoConfiguration
